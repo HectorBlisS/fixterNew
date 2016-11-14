@@ -1,0 +1,76 @@
+/*Experimento*/
+body{
+  background: #000;
+  padding-top: 10px;
+} 
+
+p.green{
+  opacity: 0;
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s 1s steps(60, end),aparece 0.5s 1s ease forwards; 
+}
+
+p.green:nth-child(2){
+  animation: type2 8s 1s steps(60, end), aparece 0.5s 1s ease forwards;
+
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span.cursor{
+  animation: blink 1s infinite;
+}
+
+
+::selection{
+  background: black;
+}
+.weare{
+  float: right;
+  margin-top: 30px
+}
+.geeks-word{
+  opacity: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color:orange;
+  animation: type2 1s 8s steps(60, end),aparece 0.5s 8s ease forwards;
+}
+
+.section{
+  width: 80%;
+  margin: 0 auto;
+}
+.boton{
+  width: 10em;
+  height: 3em;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Dosis', sans-serif;
+}
+
+.naranja{
+  background: orange;
+  transition:all 0.5s ease;
+}
+.naranja:hover{
+  background: darkorange;
+}
+.portadita{
+  text-align: center;
+  opacity: 0;
+  margin:40% 0 0 0; 
+  animation: aparece 0.5s 9s ease forwards;
+}
